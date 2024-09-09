@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@apollo/client": "^3.11.4",
+    "@apollo/server": "^4.7.1",
     "graphql": "^16.9.0",
     "bcrypt": "^4.0.1",
     "express": "^4.17.1",

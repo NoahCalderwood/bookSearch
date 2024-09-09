@@ -14,11 +14,11 @@ const typeDefs = /* GraphQL */`
         image: String
         link: String
     }
-    type InputBook {
-        bookId: String
+    input InputBook {
+        bookId: String!
         authors: [String]
         description: String
-        title: String
+        title: String!
         image: String
         link: String
     }
@@ -32,9 +32,8 @@ const typeDefs = /* GraphQL */`
     type Mutation {
         login(email: String!, password: String!): Auth
         addUser(username: String!, email: String!, password: String!): Auth
-        saveBook(newBook: InputBook!): User
+        saveBook(bookData: InputBook!): User
         removeBook(bookId: ID!): User
     }
 `;
-
 module.exports = typeDefs;
